@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendyol Login/Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Hello ,</h2>
+        <p class="welcome-text">Log in to Trendyol or create an account, don't miss out on discounts!</p>
+
+        <div class="tabs">
+            <button class="tab-button active" id="loginTab">Login</button>
+            <button class="tab-button" id="becomeMemberTab">Become a Member</button>
+        </div>
+
+        <div id="loginFormSection" class="form-section active">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <div class="password-field">
+                    <input type="password" id="loginPassword" placeholder="">
+                    <span class="eye-icon" data-target="loginPassword">&#128065;</span>
+                </div>
+            </div>
+            <div class="forgot-password">
+                <a href="#">I forgot my password</a>
+            </div>
+            <button class="submit-button">LOGIN</button>
+
+            <div class="social-login">
+                <a href="#" class="social-button facebook">
+                    <img src="photos/facebook.png" alt="Facebook icon">
+                    Log in with
+                </a>
+                <a href="#" class="social-button google">
+                    <img src="photos/google.png" alt="Google icon">
+                    Log in with
+                </a>
+            </div>
+        </div>
+
+        <div id="registerFormSection" class="form-section">
+            <div class="form-group">
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Password</label>
+                <div class="password-field">
+                    <input type="password" id="regPassword" placeholder="">
+                    <span class="eye-icon" data-target="regPassword">&#128065;</span>
+                </div>
+                <p class="password-info">Your password must be at least 10 characters long. It must include 1 uppercase letter, 1 lowercase letter, and a number.</p>
+            </div>
+
+            <div class="gender-selection">
+                <label>Gender (Optional)</label>
+                <div class="gender-options">
+                    <div class="gender-option">
+                        <input type="radio" id="genderWoman" name="gender" value="woman">
+                        <label for="genderWoman">Woman</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="genderMale" name="gender" value="male">
+                        <label for="genderMale">Male</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="expressConsent">
+                    I give my express consent to the processing and sharing of my personal data in order to present advantageous offers to me.
+                </label>
+                <label>
+                    <input type="checkbox" id="receiveElectronicMessages">
+                    I accept to receive electronic messages.
+                </label>
+                <label>
+                    <input type="checkbox" id="readUnderstood">
+                    I have read and understood <a href="#">the information text</a> regarding the processing of my personal data.
+                </label>
+            </div>
+
+            <div class="recaptcha">
+                <input type="checkbox" id="notRobot">
+                <span>Captcha</span>
+                <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA logo">
+            </div>
+
+            <button class="submit-button">BECOME A MEMBER</button>
+            <p class="terms-text">
+                By clicking Become a Member, I accept <a href="#">the Membership Terms</a>.
+            </p>
+
+            <div class="social-login">
+                <a href="#" class="social-button facebook">
+                    <img src="photos/facebook.png" alt="Facebook icon">
+                    Sign up with
+                </a>
+                <a href="#" class="social-button google">
+                    <img src="photos/google.png" alt="Google icon">
+                    Sign up with
+                </a>
+            </div>
+        </div>
+
+        <p class="contact-info">
+            You can contact us at <a href="tel:02123310200">0212 331 02 00</a> to get information about orders placed without becoming a member.
+        </p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
